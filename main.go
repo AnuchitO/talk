@@ -1,7 +1,11 @@
 package main
 
-import "github.com/AnuchitO/say"
+import (
+	"github.com/AnuchitO/say/v2"
+	oldsay "github.com/AnuchitO/say"
+)
 
 func main() {
-	say.Something("my talk")
+	say.Something("new before", "my talk")
+	oldsay.Something("Old say")
 }
